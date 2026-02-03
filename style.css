@@ -1,0 +1,161 @@
+:root{
+--backround: #000000;
+--prilymary: #FFFFFF;
+--acsent:#D23166;
+--secondary: #FAFAFA;
+--graytext: rgb(95, 89, 89);
+--graybackround: rgb(39, 38, 38);
+}
+body{
+    color:var(--prilymary);
+    background-color: var(--backround);
+}
+.hero__title {
+font-family: "Alexandria";
+font-size: 57px;
+line-height: 94%;
+  letter-spacing: -7%;
+}
+
+.hero__title span {
+    color: var(--acsent);
+}
+.primary-text {
+font-family: "Manrope";
+font-size: 18px;
+line-height: 27px;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  justify-content: center
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+}
+header {
+display: flex;
+justify-content: center
+}
+.social-list {
+  display: flex; 
+  list-style: none; 
+}
+.hero__text {
+  font-family: "Manrope";
+}
+.hero__text2 {
+  line-height: 27px;
+  font-family: "Manrope";
+  letter-spacing: 0%;
+  color: var(--graytext);
+}
+.hero_link {
+text-decoration: none;
+color: var(--secondary);
+background-color: #D23166;
+border-radius: 5px;
+font-size: 30px;
+font-family:"Alexandria";
+}
+.about_us__text {
+  font-size: 57.33px;
+  font-family: "Alexandria";
+  letter-spacing: -7%;
+  justify-content: center
+  
+}
+.about_us__span {
+  color: var(--graytext);
+}
+.our_product__h2 {
+  font-family: "Roboto";
+  letter-spacing: -7%;
+  font-size: 56px;
+}
+.our_product__buyicecream {
+background-color: var(--graybackround);
+font-family:"Roboto" ;
+}
+.our_product__text {
+  color: var(--graytext);
+  
+}
+.our_product__price {
+  font-family: "Roboto";
+}
+.our_product__lastprice {
+  text-decoration: line-through;
+  color: gray;
+}
+.our_product__link {
+text-decoration: none;
+color: var(--secondary);
+background-color: #D23166;
+border-radius: 5px;
+font-size: 30px;
+font-family:"Roboto";
+}
+.app__h2 {
+  font-family: "Roboto";
+  font-size: 56px;
+  letter-spacing: -7%;
+  line-height: 94%;
+}
+.app__text {
+font-family: "Manrope";
+line-height: 27px;
+font-size: 18px;
+color: gray;
+}
+.app__ol {
+  color: gray;
+  font-family: "Manrope";
+  line-height: 27px;
+  font-size: 18px;
+}
+.contact_form__h2 {
+  font-family: "Alexandria";
+  letter-spacing: -7%;
+  justify-content: center;
+  line-height: 94%;
+  font-size: 57.33px;
+}
+.contact_form__h2_color {
+  color: var(--acsent);
+}
+ .contact_form__input {
+  border-radius: 50px;
+  border-color: #FFFFFF;
+  background: transparent;
+  display: flex;
+  flex: 1;
+  font-size: 20px;
+ }
+.contact_form__button {
+text-decoration: none;
+color: var(--secondary);
+background-color: #D23166;
+border-radius: 5px;
+font-size: 30px;
+font-family:"Roboto";
+justify-content: center
+}
+.footer {
+  font-family: "Manrope";
+  background-color: var(--graybackround);
+}
+ .footer__text {
+  color: var(--graytext);
+ }
+ .footer__ul {
+  color: rgb(167, 165, 165);
+  text-decoration: none;
+ }
+ .footer__main {
+  color: var(--secondary);
+ }
+
