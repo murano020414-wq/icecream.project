@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header >
+    <header class="header" >
         <img src="./images/Logo.png" alt="ice cream shop logo" class="img">
         <nav>
         <ul class="nav-list">
@@ -50,20 +50,22 @@
  </div>
 </section>
 <section class="about_us" id="about_us">
-    <h2 aria-hidden>About Us</h2>
-    <img src="./images/img-pistachio.png" alt="pistachio icecream">
-    <img src="./images/img-milk.png" alt="pistachio icecream">
-    <img src="./images/img-strawberry.png" alt="pistachio icecream">
+    <h2 aria-hidden class="about_us__hide">About Us</h2>
+    <div class="about_us__box">
+    <img src="./images/img-pistachio.png" alt="pistachio icecream" class="about__image about_us__img1">
+    <img src="./images/img-milk.png" alt="pistachio icecream" class="about__image about_us__img2">
+    <img src="./images/img-strawberry.png" alt="pistachio icecream" class="about__image about_us__img3">
     <p class="about_us__text">Porem ipsum dolor sit amet, consectetur adipiscing elit. <span class="about_us__span">Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquen</span> per conubia nostra, per inceptos himenaeos.</p>
+    </div>
+    
 </section>
 <section class="our_product" id="our_product">
     <h2 class="our_product__h2">Our Product</h2>
-    <ul>
+    <ul class="our_product__list">
         <li>
 
-            <img src="./images/prodykt1.png" alt="Yellow iceCream">
+            <img src="./images/prodykt1.png" alt="Yellow iceCream" class="our_product__img">
             <div class="our_product__buyicecream">
-
             <h3>Brown bread</h3>
             <p class="our_product__text">Bon Au Pain is a pioneer in the healthy fast food scene.Bon </p>
             <p class="our_product__price">$19.55 <sub class="our_product__lastprice">$22.55</sub></p>
@@ -73,7 +75,7 @@
     </ul>
 </section>
 <section class="app" id="app">
-    <div>
+    <div class="app__left">
   <h2 class="app__h2">Simple way to order your food</h2>  
   <p class="app__text">Some food has looked so awful that it's looked like something that the dog's brought home, yet after one mouthful I've been left eating my thoughts, my words.</p>
   <ol class="app__ol">
@@ -85,13 +87,18 @@
    <li><img src="./images/appstore.png" alt="applestore"></li>
    <li><img src="./images/playstore.png" alt="playstore"></li>
   </ul>
+  </div>
+  <div class="app__right">
+  <img src="./images/phoneinhand.png" alt="phone on hand" width="300">
 </div>
-<img src="./images/phoneinhand.png" alt="phone on hand" width="300">
 </section>
-<section  class="contact form" id="contact_form">
+<section  class="contact_form" id="contact_form">
     <h2 class="contact_form__h2"><span class="contact_form__h2_color">Question in Mind?</span>  Let us help you</h2>
-    <input type="text" placeholder="Enter your question" class="contact_form__input">
+    <div class="contact_form__form">
+ <input type="text" placeholder="Enter your question" class="contact_form__input">
     <button type="submit" class="contact_form__button">Send</button>
+    </div>
+   
 </section>
     </main>
     <footer class="footer">
