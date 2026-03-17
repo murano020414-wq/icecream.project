@@ -9,6 +9,7 @@
 body{
     color:var(--prilymary);
     background-color: var(--backround);
+    padding-inline: 29px;
     
 }
 ul,ol {
@@ -291,17 +292,20 @@ letter-spacing: 1.4;
   max-width: 1440px;
   margin-inline: auto;
  padding-inline: 96px;
+ position: relative;
+ padding: 60px 96px;
 }
 
 .our_product__box{
+  max-width: 1440px;
+ margin: 0 auto;
+
+}
+.our_product__list {
   display: flex;
-  display: flex;
-  gap: 5px;
-  overflow-x: scroll;
-  
-  
-  flex-wrap: nowrap;
-  overflow: hidden;
+  gap: 20px;
+overflow-x: auto;
+
 }
 .our_product__buyicecream {
   flex-basis: 297px;
@@ -331,10 +335,10 @@ display: flex;
 
 .our_product__btn__h2 {
   display: flex;
-  display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 56px;
+    align-items: center;
+    margin-bottom: 56px;
+ 
 }
 .link1 {
   width: 48px;
@@ -356,17 +360,19 @@ margin-right: 18px;
 }
 
 
-/* 1. Use a more-intuitive box-sizing model */
+
 *, *::before, *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* 2. Remove default margin */
+
 *:not(dialog) {
   margin: 0;
 }
 
-/* 3. Enable keyword animations */
+
 @media (prefers-reduced-motion: no-preference) {
   html {
     interpolate-size: allow-keywords;
@@ -662,4 +668,56 @@ width: 100%;
 height: 196px;
 margin: 0;
 padding: 0;
+}
+.headeri__list1,
+.headeri__list2,
+.headeri__list3,
+.headeri__list4 {
+  position: relative;
+  display: inline-block;
+
+}
+.headeri__list1::after,
+.headeri__list2::after,
+.headeri__list3::after,
+.headeri__list4::after {
+  content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    background-color: white;
+   
+ 
+}
+.headeri__list1:hover::after {
+  width: 40px;
+}
+
+.headeri__list2:hover::after {
+  width: 70px;
+}
+
+.headeri__list3:hover::after {
+  width: 35px;
+}
+
+.headeri__list4:hover::after {
+  width: 60px;
+}
+.headeri__list1:hover::after {
+  width: 100%;
+}
+.about_us {
+  margin: 0;
+}
+.hero__left {
+  margin: 0;
+}
+.hero {
+  padding: 0;
+}
+
+.contact_form__form {
+  margin: 0 auto;
 }
