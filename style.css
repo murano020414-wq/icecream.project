@@ -9,7 +9,7 @@
 body{
     color:var(--prilymary);
     background-color: var(--backround);
-    padding-inline: 29px;
+   
     
 }
 ul,ol {
@@ -452,19 +452,18 @@ margin: 0;
 
 
 .app {
-  display: flex;
+
  padding: 60px 96px 60px 96px;
  
  
 }
-.app__left {
-  width: 466px;
-  height: 810px;
-
+.app .box {
+  display: flex;
+  align-items: center;
+  
 }
-.app__right {
-height: 810px;
 
+.app__right {
 flex: 1 0 782px ;
 }
 .app__left__text {
@@ -720,4 +719,7 @@ padding: 0;
 
 .contact_form__form {
   margin: 0 auto;
+}
+.contact_form__form {
+  padding-block: 150px;
 }
